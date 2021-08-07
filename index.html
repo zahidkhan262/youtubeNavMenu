@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="navigation">
+            <div class="profile"><a href="https://linktr.ee/zahidkhan262" target="_Zahid"><img src="zahid.jpeg" class="profile" alt="profile" width="50px" height="50px"></a></div>
+                <span class="profile-content name"><a href="#">Zahid Khan</a></span>
+                <span class="profile-content title"><a href="#">Frontend Developer</a></span>
+            <ul>
+                <li class="list active">
+                    <a href="#Home">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#About">
+                        <span class="icon">
+                            <ion-icon name="information-outline"></ion-icon>
+                        </span>
+                        <span class="title">About</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#Services">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Services</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#Knpc">
+                        <span class="icon">
+                            <ion-icon name="podium-outline"></ion-icon>
+                        </span>
+                        <span class="title">KNPC</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#Contact">
+                        <span class="icon">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </span>
+                        <span class="title">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section id="Home">Home</section>
+    <section id="About">About</section>
+    <section id="Services">Services</section>
+    <section id="Knpc">KNPC</section>
+    <section id="Contact">Contact</section>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeMenu() {
+            list.forEach((item) =>
+                item.classList.remove('active')
+            );
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeMenu)
+        );
+    </script>
+</body>
+
+</html>

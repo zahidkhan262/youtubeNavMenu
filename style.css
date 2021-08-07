@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    float: left;
+    background: rgb(255, 255, 255);
+}
+.navigation{
+    position: fixed;
+    height: 100vh;
+    width: 70px;
+    background: #2b343b;
+    box-shadow: 10px 0 0 #4187ff;
+    border-left: 10px solid #2b343b;
+    overflow: hidden;
+    transition: width 0.5s ease-in;
+}
+.navigation:hover{
+    width: 220px;
+}
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+     margin-top: 120px;
+}
+.navigation ul li{
+    list-style: none;
+    position: relative;
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+    margin-top: 10px;
+}
+.navigation ul li.active{
+    background: #4187f6;
+    border-radius: 10px 0 0 10px;
+}
+.navigation ul li a{
+    position: relative;
+    display: block;
+    display: flex;
+    color: #fff;  
+    width: 100%;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+.navigation ul li a .icon ion-icon{
+    position: relative;
+    font-size: 1.5em;
+    z-index: 1;
+}
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+}
+.profile{
+    margin: 10px 0;
+}
+.profile img{
+    position: relative;
+    text-align: center;
+    top: 5px;
+    left: 5px;
+    object-fit: cover;
+    border-radius: 50%;
+    text-align: center;
+}
+.profile-content{
+    position: relative;
+    top: -70px;
+    left: 60px;
+    overflow: hidden;
+    display: block;
+    padding: 2px;
+}
+.title a{
+    font-size: 1.1em;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.name a{
+    font-size: 1.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: crimson;
+}
+
+/* section */
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-color: darkgoldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    font-weight: bold;
+    color: rgb(97, 90, 90);
+}
+#Home{
+    background: url(zahid.jpeg) no-repeat center center;
+    width: 90%;
+    margin: 0 auto;
+    height: 100vh;
+}
+#About{
+    background: crimson;
+}
+#Portfolio{
+    background: green;
+}
+#Services{
+    background: rgba(25, 28, 219, 0.774);
+}
+#Contact-Us{
+    background: #8f117e;
+}
